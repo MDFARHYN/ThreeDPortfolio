@@ -1,11 +1,11 @@
 services:
   nextjs:
-    build:
-      context: .
-    image: threedportfolio-next_portfolio_3001
+    build: .
     ports:
-      - "3001:3001"
+      - '3001:3001'
     environment:
-      NODE_ENV: production
+      - NODE_ENV=production
     volumes:
       - /app/node_modules
+    restart: always
+ 
