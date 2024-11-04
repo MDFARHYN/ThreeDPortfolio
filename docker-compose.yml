@@ -1,7 +1,7 @@
 version: '3.8'  # Use the appropriate version for your project
 
 services:
-  nextjs3DPortfolio:
+  nextjs3portfolio:
     build:
       context: .  # Current directory
       dockerfile: Dockerfile  # Use the Dockerfile created above
