@@ -1,14 +1,11 @@
-version: '3.8'  # Use the appropriate version for your project
-
 services:
-  next_portfolio_3001:
+  nextjs:
     build:
-      context: .  # Current directory
-      dockerfile: Dockerfile  # Use the Dockerfile created above
+      context: .
+    image: threedportfolio-next_portfolio_3001
     ports:
-      - "3001:3001"  # Map port 3000 on the host to port 3000 on the container
+      - "3001:3001"
     environment:
-      NODE_ENV: production  # Set environment variable
+      NODE_ENV: production
     volumes:
       - /app/node_modules
-    command: npm start  # Start the application
